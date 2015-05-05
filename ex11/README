@@ -1,0 +1,62 @@
+guybrush
+308883776
+Konstantin Karasik
+
+I discussed the exercise with: Aviram, Ben
+
+================================
+=  README for ex11: Task Queue =
+================================
+
+usage:	
+
+
+==================
+=  Description:  =
+==================
+This program is a group of modules that function like a task queue, keeping
+different tasks ordered according to their priority
+
+=============================
+=  List of submitted files: =
+=============================
+
+README			    This file
+
+
+node.py			    The module holding the Node class which holds our
+			        task and it’s priority, returning it or printing it
+			        and also checks if equal or not.
+
+
+priority_queue.py	This module holds our PriorityQueue object which
+			        handles the node placement and their order, adding
+			        in new tasks and removing the first task. It can also
+			        check if two priority queues are equal and print out.
+
+
+priority_queue_iterator.py	This module creates an iterator based on the
+				            PriorityQueue object so to allow it to be
+				            iterated upon over and over again.
+
+
+======================
+=  Special Comments  =
+======================
+answers to questions:
+
+	- 9) If we call those lines again we will be receiving a stopIteration
+		exception each time, so we can iterate over it only once
+
+	- 10) This time we can keep on iterating over it again and again as the
+		object that gets “stuck” is not our main PriorityQueue but a temp
+		Iterator we build each time we call for it.
+
+	- 12) The complexity is probably something like 0(n^2 + n(m^2)) because we
+		run for each item in the queue which is N and in the worst
+		case where the items in the other queue are all lower priority than
+		those in our main queue, will result in it going over all the nodes
+		and they are increasing by 1 each time, so it's a Sidra Heshbonit.
+
+	- 13) The complexity of this function is 0(n) because we run once over each
+		element and see if they are equal.

@@ -1,0 +1,55 @@
+guybrush
+308883776
+Konstantin Karasik
+
+I discussed the excercise with: Aviram Yosef, Ben Cohen
+
+===============================
+=  README for ex5: Perceptron =
+===============================
+
+usage:	python3 perceptron.py 
+
+
+==================
+=  Description:  =
+==================
+This program uses the perceptron algorithm to try and find a classifier on a
+given data set, which it can later try and use on larger data sets to classify
+them accordingly. 
+The Perceptron algorithm searches for a mistake between the given label in the
+training data and updates his weights and bias to try and compensate for this
+until a classifier can be found.
+After 10x(size of data) runs, if a classifier cannot be found it returns a 
+None classifier.
+
+=============================
+=  List of submitted files: =
+=============================
+
+README			This file
+perceptron.py		The perceptron file containing the perceptron function
+			and other functions to test it against a data set
+
+======================
+=  Special Comments  =
+======================
+question 5:
+
+the reason our algorithm made a mistake is becuase of a mistake of labels
+and an example which is strongly on the line between a 4 and 7 .
+
+mistake in label 57 is that it seems alot like a 7 because of the cross
+line and the "missing" line up top. It seems alot like label 123 which is a 7.
+
+mistake in label 118 which is supposed to be 1.0 but is -1.0
+meaning our algorithm does find it but the label is incorrect
+
+Bonus question 6:
+
+The problem with out current perceptron is that he searches for a linear type
+of classification while the data set cannot be separated linearly. This type
+data set requires a different type of classification and most likely requires
+an “eclipse” type of classification ( (x^2)/a + (y^2)/b = 1). This sort of 
+classification on a 2 dimensional axis might give the right classifier for 
+this data set. Currently our classifier is a 1 dimensional one.

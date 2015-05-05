@@ -1,0 +1,38 @@
+guybrush
+308883776
+Konstantin Karasik
+
+I discussed the excercise with: No one
+
+===================================
+=  README for ex7: Image morphing =
+===================================
+
+usage:	python3 gui.py <image_source> <image_target> <num_frames> <out_dir>
+                                                        <max_x> <max_y>
+
+
+==================
+=  Description:  =
+==================
+These programs take in 2 images and gets the points submitted by the user
+to create matching triangles on the 2 images. From there it creates
+intermediate images between the source and target image so it will be able to
+see the images morph from one to the other.
+
+
+=============================
+=  List of submitted files: =
+=============================
+
+README			        This file
+ex7.py      		    This program hold different helper functions to the
+                        gui.py program calling them. 
+                        It handles the points and the triangle creation, the 
+                        creation of intermediate triangles and images and in
+                        the end creates a folder with the intermediate images
+                        so a movie can be made from them.
+
+======================
+=  Special Comments  =
+======================

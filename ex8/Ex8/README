@@ -1,0 +1,61 @@
+guybrush
+308883776
+Konstantin Karasik
+
+I discussed the excercise with: No one
+
+===================================
+=  README for ex8: Asteroids Game =
+===================================
+
+usage:	python3 asteroidsMains.py <asteroid_num>
+
+
+==================
+=  Description:  =
+==================
+These program starts a game of Asteroids with the number of asteroids specified
+if no number is specified then it starts with the default of 3 asteroids. 
+
+A special torpedo can be shot using the 'e' key.
+
+
+=============================
+=  List of submitted files: =
+=============================
+
+README			        This file
+
+AsteroidsMain.py        This program holds a helper class GameRunner and starts
+                        the game of asteroids by calling on helper Classes that
+                        should be present with this file. This class updates
+                        the positions of objects in the game and controlls the
+                        behaviour of objects (shooting torpedos, moving the
+                        ship, handeling asteroids destruction and so on...)
+                        The new torpedo is bound to key 'e' during the init.
+
+circleTorpedo.py        This hold the special torpedo class that shots a
+                        torpedo that moves in a circular motion around an axis
+                        in a radius dependent on the ships speed. It creates
+                        the torpedo from the nose of the space ship and from 
+                        there calculates a radius to move around. Lifespan is
+                        similar to original torpedo.
+
+======================
+=  Special Comments  =
+======================
+"Do a barrel roll! " 
+
+I have added in the class a max of torpedoes as a DEFUALT attribute (20) as 
+specified by you.
+
+I have also implemented bonus 1 and 2 which checks if we got 2 arguments in the 
+command line or 1 and adds a number of asteroids accordingly and a new type of
+torpedo that moves in a circle around an axis. The key bound to this special
+torpedo is 'e' and is bound in the init function of GameRunner().
+
+In all places Input is assumed to be correct.
+
+About the API, i mostly used it as a shortcut to understand what each class
+holds but sometimes i went and looked inside the class to understand it's 
+limits, what does a function hold, what it should recieve and so on.

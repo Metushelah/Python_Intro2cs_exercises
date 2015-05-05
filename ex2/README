@@ -1,0 +1,41 @@
+guybrush
+308883776
+Konstantin Karasik
+
+I discussed the excercise with: No one this time
+
+===============================
+=  README for ex2: Calculate  =
+===============================
+
+usage:	python3 ex2a.py 
+		python3 ex2b.py
+
+
+==================
+=  Description:  =
+==================
+Second exercise.
+First program will print different areas and peremiters according
+to the shape chosen.
+Second program functions as a basic calculator
+
+
+=============================
+=  List of submitted files: =
+=============================
+
+README			This file
+ex2a.py    	    Contains the program to recieve a chosen shape from the user
+                and prints it's area and peremiter according to the inputs
+                specified (sides or radius)
+ex2b.py     	Contains a program that functions as a calculator.
+				It recieves 2 numbers (int) and an operation and prints
+				the result of said operation.
+
+======================
+=  Special Comments  =
+======================
+
+'you either die a "Hero" or you live long enough to see yourself become the villian...' 
+        - Harvey Dent

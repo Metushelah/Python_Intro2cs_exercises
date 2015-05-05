@@ -1,0 +1,73 @@
+guybrush
+308883776
+Konstantin Karasik
+
+I discussed the excercise with: No one this time
+
+=======================================
+=  README for ex3: Lord of The Rings  =
+=======================================
+
+usage:	python3 findLargest.py  
+        python3 findSecondSmallest.py
+        python3 TotalWeight.py
+        python3 twoDimensionalSeek.py
+        python3 ithElementValue.py
+        python3 decomposition.py
+        python3 binaryToDecimal.py
+        python3 decimalToBinary.py
+
+
+==================
+=  Description:  =
+==================
+Third exercise.
+These are 8 small programs each doing something else under the theme 
+of Lord Of The Rings.
+
+
+=============================
+=  List of submitted files: =
+=============================
+
+README			        This file
+
+findLargest.py          Prints the position of the largest number according
+                        to a given number of inputs specified at start
+
+findSecondSmallest.py   Prints the position of the second Smallest number out
+                        of 10 inputs given
+
+TotalWeight.py          Prints the total sum of numbers up to 100 or else
+                        -1 is given and prints the sum
+                        
+twoDimensionalSeek.py   Prints the number of step needed from start to
+                        reach the position in the end of a right/left journey
+                        
+ithElementValue.py      Prints the ithElement in a fibonnacci sequence
+
+decomposition.py        Prints the number given through it's digit
+
+binaryToDecimal.py      Prints the binary number given in decimal
+
+decimalToBinary.py      Prints the decimal number given in binary
+                
+======================
+=  Special Comments  =
+======================
+Answer for question 9:
+- there main difference between the two exercises is that while you trying
+    to convert from a smaller base to a larger one you need to multiple each
+    remainder in a growing step multiplied by the base you converting to.
+    From a bigger base to a smaller one you use the remainder each time 
+    until you get to the end.
+    
+- after reading this question i actually got the idea to do it, and i used the
+    remainder from the division each time. So the small change needed is using
+    the remainder of dividing by 2 each time without multiplying by the growing
+    base.
+    
+- yes we could make an easy algorithm using those two programms we made
+    allowing for the base to be entered and then converting the number from
+    that base into decimal and from decimal down into the new base wanted.
+

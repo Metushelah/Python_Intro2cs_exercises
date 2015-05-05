@@ -1,0 +1,35 @@
+guybrush
+308883776
+Konstantin Karasik
+
+I discussed the excercise with: No one this time
+
+===============================
+=  README for ex4: Nim Games  =
+===============================
+
+usage:	python3 nim.py 
+	
+
+
+==================
+=  Description:  =
+==================
+Fourth exercise.
+This program plays "Nim" with the player or allows him to play against another
+player in a Hot Seat type of game.
+
+=============================
+=  List of submitted files: =
+=============================
+
+README			This file
+nim.py    	    This file contains all the functions and processes to allow
+                the play of Nim game.
+
+======================
+=  Special Comments  =
+======================
+
+'We are the knights who says "Nim"' 
+        - Monthy Python Holy Grail

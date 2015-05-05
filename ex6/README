@@ -1,0 +1,42 @@
+guybrush
+308883776
+Konstantin Karasik
+
+I discussed the excercise with: No One
+
+===============================+
+=  README for ex6: Recurcision =
+===============================+
+
+usage:	python3 palindrome.py
+        python3 balanced_brackets.py
+        python3 y_tree.py
+
+
+==================
+=  Description:  =
+==================
+These programs use recursion in order to solve some problems such as checking
+if a string is a palindrome between two indexes or if the string given is
+balanced according to the amount of closes inside it.
+
+
+=============================
+=  List of submitted files: =
+=============================
+
+README			        This file
+palindrome.py		    This program checks if a string is a "palindrome" on 
+                        it's whole or if it's a palindrome between two indexes
+                        given.
+balanced_brackets.py    Checks if the brackets inside the string are balanced.
+                        Checks where the first error of inbalance occurs.
+                        Returns a list with the number signifiying the position
+                        of the brackets in relation to it's opening of closing
+                        one.
+y_tree.py               draws a tree recursively
+
+======================
+=  Special Comments  =
+======================
+

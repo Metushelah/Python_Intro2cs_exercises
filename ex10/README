@@ -1,0 +1,72 @@
+guybrush
+308883776
+Konstantin Karasik
+
+I discussed the excercise with: Noa Portugal, Eliaz
+
+======================================
+=  README for ex10: Word list search =
+======================================
+
+usage: 
+
+
+==================
+=  Description:  =
+==================
+This was an excerise in building a programs to extract words from file, to
+track a dictionary of words and see if it matches with a word given and an
+excerise in using paths and combining all those modules into one big monster
+of a Machine that can search your computer (or a path given) for a file with
+the words you give it in the begining.
+
+Muah hahah ha ha ha ... ha ... ha ha... ha....
+
+=============================
+=  List of submitted files: =
+=============================
+
+README			    This file
+
+WordExtractor.py    This class creates an iter object and using the file path
+                    given it will scan the file and extract all it's word.
+                    Then using and iter function will return them one by one.
+
+WordTracker.py      This class creates a Dictionary search object that gets
+                    a word_list and oreders it using Merge_sort and then using
+                    Binary_Search will return if the word given is in the dict.
+                    It can also keep track if the dictionary words were
+                    encountered and if all of them were it will return True.
+
+PathScanner.py      This module can creates an iter object than return the
+                    files and directories in the current path given to it.
+                    It can also print a tree of the full path of a given path.
+                    It will also search using the above modules for a file 
+                    containing all the words in a list given to it, and will
+                    return it's path once found, otherwise None.
+            
+======================
+=  Special Comments  =
+======================
+
+Answers for WordTracker questions:
+- desigining the __contain__ function did make me consider running time and
+    therefore to choose to sort the word list in the __init__ thus giving up
+    some running time in the begining but then allowing for the search queries
+    to run faster. That's why i chose using the Merge_sort which has the best
+    running time of all the sort algorithms we saw till now (i wasnt allowed
+    to use Hash tables nor could use the Radix sort [bucket sort]).
+    
+    After this decision it was obvious to use the Binary_Search algorithm for
+    best runing time possible without using the lookup functions of python.
+    
+    The encounter function made me use a helper function for the binary search
+    as not to lose the index of the word i search and thus __contain__ checks
+    if the binary search brings back a different result and then prints
+    True/False accordingly.
+    The encounter function uses the same helper Binary Search function but to
+    extract the index and then change a list holding the word flags.
+    
+- The running time of the encounter function is : O(log(n))
+- The running time of the encounter_all function is : O(n)
+- The running time of the reset function is: O(n)
